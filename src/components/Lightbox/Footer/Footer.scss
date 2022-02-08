@@ -1,0 +1,52 @@
+.LbFooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 4rem;
+    // background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    color: white;
+
+    &__Left {
+        display: flex;
+        align-items: center;
+        margin-left: 0.5rem;
+    }
+
+    &__Right {
+        margin-right: 0.5rem;
+    }
+
+    /* if backdrop support: very transparent and blurred */
+    @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        background-color: rgba(0, 0, 0, 0.05);
+        -webkit-backdrop-filter: blur(0.5rem);
+        backdrop-filter: blur(0.5rem);
+    }
+
+    &__Left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0.5rem;
+    }
+
+    &__Right {
+        margin-right: 0.5rem;
+    }
+
+    &__Title {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    &__SecondaryTitle {
+        font-size: 1.4rem;
+    }
+}
