@@ -15,15 +15,18 @@ export interface Props {
 export default function Lightbox({ open, images, onChange, onClose }: Props) {
     const [index, setIndex] = useState(0);
 
+    const image = images[index];
+
     if (!open) return null;
 
     return (
         <div className="LightBox">
             <Header images={images} index={index} onClose={onClose} />
             <div className="LightBox__Container">
-                <Center image={images[index]} index={index} images={images} setIndex={setIndex} onChange={onChange} />
+                <Center image={image} index={index} images={images} setIndex={setIndex} onChange={onChange} />
             </div>
-            <Footer image={images[index]} />
+            <Footer image={image} />
+            {image.description && <div className="LbDescription">{image.description}</div>}
         </div>
     );
 }
