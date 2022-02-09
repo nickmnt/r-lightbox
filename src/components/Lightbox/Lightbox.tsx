@@ -17,7 +17,7 @@ export default function Lightbox({ open, images }: Props) {
         <div className="LightBox">
             <Header images={images} index={index} />
             <div className="LightBox__Container">
-                <Center image={images[index]} index={index} />
+                <Center image={images[index]} index={index} images={images} setIndex={setIndex} />
             </div>
             <Footer image={images[index]} />
         </div>
