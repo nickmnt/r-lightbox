@@ -1,7 +1,10 @@
 import { LightBox, LboxImage } from 'r-lightbox';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+    const [open, setOpen] = useState(true);
+
     const img1: LboxImage = {
         src: 'https://wallpapers.com/images/high/mountains-and-starry-galaxy-zt0to2lebx20wyzt.jpg',
         description: 'First image',
@@ -23,7 +26,7 @@ function App() {
     return (
         <div className="App">
             <div>dsadsa</div>
-            <LightBox open={true} images={[img1, img2, img3]} />
+            <LightBox open={open} onClose={() => setOpen(false)} images={[img1, img2, img3]} />
         </div>
     );
 }

@@ -7,13 +7,14 @@ import './Header.scss';
 export interface Props {
     images: LboxImage[];
     index: number;
+    onClose: () => void;
 }
 
-export default function Header({ images, index }: Props) {
+export default function Header({ images, index, onClose }: Props) {
     return (
         <div className="LbHeader">
             <div className="LbHeader__Left">
-                <IconButton sx={{ color: 'white' }}>
+                <IconButton sx={{ color: 'white' }} onClick={onClose}>
                     <ArrowLeft />
                 </IconButton>
                 <p className="LbHeader__Text">

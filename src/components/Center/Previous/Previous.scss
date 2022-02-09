@@ -4,6 +4,7 @@
     height: 100%;
     left: 0;
     bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
     -webkit-transition: background-color 0.3s ease-out;
     -moz-transition: background-color 0.3s ease-out;
     -o-transition: background-color 0.3s ease-out;
@@ -21,7 +22,7 @@
 
     &__Arrow {
         opacity: 0.35;
-        animation: blink 2s step-start 0s infinite;
-        -webkit-animation: blink 2s step-start 0s infinite;
+        // animation: blink 2s step-start 0s infinite;
+        // -webkit-animation: blink 2s step-start 0s infinite;
     }
 }

@@ -3,15 +3,10 @@ import ArrowLeft from '../../Icons/ArrowLeft';
 import './Next.scss';
 
 export interface Props {
-    index: number;
-    setIndex: (value: number) => void;
+    goToNext: () => void;
 }
 
-export default function Next({ index, setIndex }: Props) {
-    const goToNext = () => {
-        setIndex(index + 1);
-    };
-
+export default function Next({ goToNext }: Props) {
     return (
         <div className="LbNext" onClick={goToNext}>
             <div className="Mirror LbNext__Arrow">
