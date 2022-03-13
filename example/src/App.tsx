@@ -26,22 +26,21 @@ function App() {
     const img1: LboxImage = {
         src: 'https://wallpapers.com/images/high/mountains-and-starry-galaxy-zt0to2lebx20wyzt.jpg',
         description: 'First image',
-        title: 'Beautiful Wallpaper 1',
-        secondaryTitle: '31.01.22 at 1:06 PM'
+        title: 'Description 1',
+        secondaryTitle: 'Secondary Title 1'
     };
     const img2: LboxImage = {
-        src: 'https://wallpapers.com/images/high/mountains-and-starry-galaxy-zt0to2lebx20wyzt.jpg',
+        src: 'https://www.windowscentral.com/sites/wpcentral.com/files/styles/large/public/field/image/2016/06/xpbliss_7.jpg',
         description: 'Second image',
-        title: 'Beautiful Wallpaper 2',
-        secondaryTitle: '31.01.22 at 1:07 PM'
+        title: 'Description 2',
+        secondaryTitle: 'Secondary Title 2'
     };
     const img3: LboxImage = {
         src: 'https://wallpapers.com/images/high/mountains-and-starry-galaxy-zt0to2lebx20wyzt.jpg',
         description: 'Third image',
-        title: 'Beautiful Wallpaper 3',
-        secondaryTitle: '31.01.22 at 1:08 PM'
+        title: 'Description 3',
+        secondaryTitle: 'Secondary Title 3'
     };
-
     const headerElem = (
         <>
             <IconButton sx={{ color: 'white' }}>

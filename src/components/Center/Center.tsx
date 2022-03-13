@@ -43,20 +43,25 @@ export default function Center({ image, index, setIndex, images, onChange }: Pro
     const [showLoading, setShowLoading] = useState(false);
 
     useEffect(() => {
+        console.log('yes');
         if (!localImage) {
+            console.log('yes1');
             setLocalImage(image);
         } else {
+            console.log('yes2');
             if (image.src !== localImage.src) {
+                console.log('yes3');
                 setLoaded(false);
                 setTimeout(() => {
                     setLocalImage(image);
                     setShowLoading(true);
                 }, 750);
             } else {
-                setLoaded(false);
-                setTimeout(() => {
-                    setLoaded(true);
-                }, 750);
+                console.log('yes4');
+                // setLoaded(false);
+                // setTimeout(() => {
+                // setLoaded(true);
+                // }, 750);
             }
         }
     }, [image]);
