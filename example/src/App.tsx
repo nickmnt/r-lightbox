@@ -14,6 +14,7 @@ import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 
 function App() {
     const [open, setOpen] = useState(true);
+    const [index, setIndex] = useState(0);
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
     const menuOpen = Boolean(anchorEl);
     const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -54,7 +55,7 @@ function App() {
     return (
         <div className="App">
             <div>Example Usage</div>
-            <LightBox open={open} onClose={() => setOpen(false)} images={[img1, img2, img3]} headerElement={headerElem} />
+            <LightBox open={open} onClose={() => setOpen(false)} images={[img1, img2, img3]} headerElement={headerElem} selectedIndex={index} setSelectedIndex={setIndex} />
             <Menu
                 id="demo-positioned-menu"
                 aria-labelledby="demo-positioned-button"
