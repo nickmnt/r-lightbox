@@ -50,3 +50,8 @@ const [selectedIndex, setSelectedIndex] = useState(0);
 https://nimamt.github.io/r-lightbox/  
 The example project folder in this repository contains an example usage.  
 The library is simple and not complex; most props are optional.
+
+## 1 rem = 16px
+
+If you set 1 rem = 10px then adjust by changing the font-size. (For the lightbox)  
+For example wrap the lightbox with a div and change the font-size property.

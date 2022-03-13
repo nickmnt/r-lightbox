@@ -15,7 +15,7 @@ export default function Header({ images, index, onClose, headerElement }: Props)
     return (
         <div className="LbHeader">
             <div className="LbHeader__Left">
-                <IconButton sx={{ color: 'white' }} onClick={onClose}>
+                <IconButton onClick={onClose}>
                     <ArrowLeft />
                 </IconButton>
                 <p className="LbHeader__Text">

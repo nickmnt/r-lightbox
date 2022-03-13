@@ -2,7 +2,6 @@
 
 .LightBox {
     background-color: rgba(0, 0, 0, 0.9);
-    font-size: 62.5%;
 
     /* if backdrop support: very transparent and blurred */
     @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
