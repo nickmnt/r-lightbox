@@ -1,5 +1,5 @@
 import IconButton from '@mui/material/IconButton/IconButton';
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { LboxImage } from '../../../types/lightbox';
 import ArrowLeft from '../../Icons/ArrowLeft';
 import './Header.scss';
@@ -8,9 +8,10 @@ export interface Props {
     images: LboxImage[];
     index: number;
     onClose: () => void;
+    headerElement?: ReactNode;
 }
 
-export default function Header({ images, index, onClose }: Props) {
+export default function Header({ images, index, onClose, headerElement }: Props) {
     return (
         <div className="LbHeader">
             <div className="LbHeader__Left">
@@ -21,7 +22,7 @@ export default function Header({ images, index, onClose }: Props) {
                     {index + 1} of {images.length}
                 </p>
             </div>
-            <div className="LbHeader__Right"></div>
+            <div className="LbHeader__Right">{headerElement}</div>
         </div>
     );
 }
