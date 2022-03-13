@@ -1,7 +1,7 @@
 {
     "name": "r-lightbox",
     "private": false,
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A simple react lightbox component",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
