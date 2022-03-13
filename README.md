@@ -1,4 +1,4 @@
-# r-lightbox (based on v.1.0.2)
+# r-lightbox (based on v.1.0.3)
 
 A simple lightbox made to work with the lastest version of <strong>react</strong> and <strong>typescript</strong>.  
 Supports panning the images, zooming in, swiping left and right, and putting custom components on the right side of header and footer.
