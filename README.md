@@ -34,7 +34,7 @@ export interface Props {
 **open:** Is the lightbox open?  
 **selectedIndex:** Index of the selected image (Valid values are 0 up to and including images.length - 1)  
 **setSelectedIndex:** The function that changes the selectedIndex (Called in the event of next/prev page)  
-For example you could prove these:
+For example you could provide these:
 
 ```jsx
 const [selectedIndex, setSelectedIndex] = useState(0);
