@@ -10,9 +10,11 @@ export interface Props {
     images: LboxImage[];
     onClose: () => void;
     onChange?: (oldImg: LboxImage, newImg: LboxImage) => void;
+    headerElement?: React.ReactNode;
+    footerElement?: React.ReactNode;
 }
 
-export default function Lightbox({ open, images, onChange, onClose }: Props) {
+export default function Lightbox({ open, images, onChange, onClose, headerElement, footerElement }: Props) {
     const [index, setIndex] = useState(0);
 
     const image = images[index];
@@ -21,11 +23,11 @@ export default function Lightbox({ open, images, onChange, onClose }: Props) {
 
     return (
         <div className="LightBox">
-            <Header images={images} index={index} onClose={onClose} />
+            <Header images={images} index={index} onClose={onClose} headerElement={headerElement} />
             <div className="LightBox__Container">
                 <Center image={image} index={index} images={images} setIndex={setIndex} onChange={onChange} />
             </div>
-            <Footer image={image} />
+            <Footer image={image} footerElement={footerElement} />
             {image.description && <div className="LbDescription">{image.description}</div>}
         </div>
     );
